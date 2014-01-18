@@ -1,0 +1,16 @@
+<%= render("searchbox") %>
+
+<table class="search_results">
+<% @posts.each do |p| %>
+  <tr>
+    <td colspan="2" class="thread_title"><%= PostThread.find_by({tid: p.tid}).name %>&nbsp;<%= thread_context_url(p).html_safe %></td>
+  </tr>
+  <tr class="message_row <%= cycle('', '', 'cycle_color', 'cycle_color') -%>">
+    <td class="user_cell"><img src="http://oaklog.com/images/icons/icon_<%= p.uid %>.jpg" /><br /><strong><%= User.find_by({uid: p.uid}).username %></strong></td>
+    <td class="message_cell"><%= p.message.html_safe %></td>
+  </tr>
+  <tr class="<%= cycle('', '', 'cycle_color', 'cycle_color') -%>">
+    <td colspan="2" class="time_cell"><%= p.posttime.strftime("%d %b, %Y %I:%M %P") %>
+  </tr>
+<% end %>
+</table>

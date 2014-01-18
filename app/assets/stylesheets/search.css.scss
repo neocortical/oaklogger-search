@@ -1,0 +1,102 @@
+body {
+	background:#dbf7c0 url(http://oaklog.com/images/site_0/texture/bamboo.png);
+	font-family: Verdana, Sans-Serif;
+}
+
+a {
+	color:#000;
+}
+
+a:hover {
+	color:#888;
+}
+
+div#search_form {
+	position:relative;
+	height:2em;
+}
+
+input.search_field {
+	position:absolute;
+	top:0;
+	left:0;
+	height:2em;
+	width:30em;
+	font-size:1em;
+	padding:0 0 0 0.5em;
+	border:1px solid #888;
+	margin:0;
+}
+
+input.search_submit {
+	position:absolute;
+	top:0;
+	left:30em;
+	height:2.1em;
+	font-size:1em;
+	border:1px solid #888;
+	margin:0;
+	background:#eee;
+	width:10em;
+	padding:0.5em 0 0.5em 0;
+}
+
+table.search_results {
+	width:50em;
+	margin:0 auto;
+	background:#dbf7c0;
+	padding:0;
+	border-collapse:collapse;
+}
+
+table.search_results td {
+	vertical-align:top;
+}
+
+tr.message_row {
+	margin-top:1em;
+}
+
+tr.cycle_color {
+	background:#cbe5b2;
+}
+
+td.thread_title {
+	background:#000;
+	color:#fff;
+	text-align:center;
+	padding:0.3em 0 0.3em 0;
+}
+
+td.thread_title a {
+	color:#fff;
+}
+td.thread_title a:hover {
+	color:#9fc;
+}
+
+td.user_cell {
+	padding:0.5em 0 0 0.5em;
+	width:8em;
+}
+
+td.user_cell img {
+	width:40px;
+	height:40px;
+}
+
+td.message_cell {
+	padding:0.5em 0.5em 0 0;
+	width:40em;
+}
+
+td.message_cell img {
+	max-width:40em;
+}
+
+td.time_cell {
+	text-align:right;
+	font-size:smaller;
+	color:#555;
+	padding:0.3em 0 0.5em 0;
+}

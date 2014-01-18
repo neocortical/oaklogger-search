@@ -1,0 +1,9 @@
+<img src="http://oaklog.com/images/site_0/Tfind.gif" /><img src="http://oaklog.com/images/site_0/Toaklog.gif" />
+
+<div id="search_form">
+  <%= form_for @search, :url => search_path, :method => :get do |f| %>
+    <%= f.text_field :q, :class => "search_field" %> <%= f.submit "Search Posts", :class => "search_submit" %>
+  <% end %>
+</div>
+
+<br /><hr /><br />
